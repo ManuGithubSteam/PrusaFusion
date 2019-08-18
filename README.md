@@ -11,7 +11,8 @@ Easily push Fusion 360 designs to another machine from within Fusion and instant
 ## Info:
 
 Stl are in the tmp directories on both Platforms.
-There are two components. The Sender aka Fusion plugin and the reciver aka prusafusion_daemon.sh and fusion_helper.sh
+
+There are two components. The sender aka Fusion plugin and the reciver aka prusafusion_daemon.sh and fusion_helper.sh
 
 ## Usage:
 First see [How to install sample Add-Ins and Scripts](https://rawgit.com/AutodeskFusion360/AutodeskFusion360.github.io/master/Installation.html)
@@ -26,12 +27,11 @@ Basic usage:
   * Make sure prusafusion_daemon.sh is running from a Linux user.
   * Change PATH Variable in prusafusion_daemon.sh to the correct one for your PrusaSlicer.AppImage
 
-  
 ## License
 Licensed under the terms of the [MIT License](http://opensource.org/licenses/MIT). Please see the [LICENSE](LICENSE) file for full details.
 
 ## Written by
 
-Written by Manuel
+me
 
 Fork from https://github.com/tapnair/OctoFusion, heavily modified.
