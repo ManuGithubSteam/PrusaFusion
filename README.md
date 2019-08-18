@@ -1,4 +1,4 @@
-# PrusaFusion
+# OctoFusion
 PrusaSlicer Plugin for Fusion 360 over SSH
 Easily push Fusion 360 designs to another PC and instantly start slicing!
 

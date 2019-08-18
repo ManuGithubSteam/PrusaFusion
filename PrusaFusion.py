@@ -12,8 +12,8 @@ command_defs = []
 
 # Define parameters for command
 cmd = {
-        'commandName': 'PrusaFusion',
-        'commandDescription': 'Export model to PrusaSlicer over SSH to another (linux) machine.',
+        'commandName': 'Send to PrusaSlicer',
+        'commandDescription': 'Export model to PrusaSlicer over Network with SSH.',
         'commandResources': './Resources/PrusaFusion',
         'cmdId': 'PrusaFusion_CmdId',
         'workspace': 'FusionSolidEnvironment',

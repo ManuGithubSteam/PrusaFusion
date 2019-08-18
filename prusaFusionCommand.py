@@ -172,12 +172,12 @@ class prusaFusionCommand(Fusion360CommandBase):
     # Runs when user selects your command from Fusion UI, Build UI here
     def onCreate(self, command, inputs):
 
-        inputs.addImageCommandInput('image1', '', './/Resources//octoprint-logo.png')
+        inputs.addImageCommandInput('image1', '', './/Resources//prusaslicer-logo.png')
         inputs.addTextBoxCommandInput('labelText2', '',
-                                      '<a href="http://github.org">Github</a></span> Export from am Virtual Machine to Prusa Slicer on a Linux Host',
+                                      '<a href="https://github.com/ManuGithubSteam/PrusaFusion/tree/master">Github</a></span>  Export from a Virtual Machine to Prusa Slicer on a Linux Host, or anywhere where SSH is available...',
                                       4, True)
         inputs.addTextBoxCommandInput('labelText3', '',
-                                      'Choose the file type and selection to send to Octoprint for quotes.', 2, True)
+                                      'Choose the quality and send to the slicer', 2, True)
 
         stldropDown = inputs.addDropDownCommandInput('stlRefinement', 'STL refinement',
                                                      adsk.core.DropDownStyles.LabeledIconDropDownStyle)
