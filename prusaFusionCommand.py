@@ -15,6 +15,7 @@ import os
 import sys
 import subprocess
 import time
+import string
 
 from .Fusion360CommandBase import Fusion360CommandBase
 
@@ -166,7 +167,18 @@ class prusaFusionCommand(Fusion360CommandBase):
         # let the daemon know there is a new file.
         username,ip = host.split("@")
         helperPath= '/home/'+username+'/.PrusaSlicer/fusion_helper.sh'
-        subprocess.call([pscpPath + 'plink.exe','-batch', '-pw', key , host, helperPath, filename+'.stl'  ],shell=True)
+	  # Todo filename: (Unsaved).stl
+        # do some replaceing
+        sanatizedname= filename
+        #if "(" in filename:
+        sanatizedname= sanatizedname.replace("(" , "_..900.._") # (
+        sanatizedname= sanatizedname.replace(")" , "_..901.._") # )
+            #subprocess.call([pscpPath + 'plink.exe','-batch', '-pw', key , host, helperPath, bracetname+'.stl'  ],shell=True)
+	  # Todo filename: Umlauts
+            # Fall 1 -> Klammer und 
+            # Fall 2
+        # normal file name or umlaut        
+        subprocess.call([pscpPath + 'plink.exe','-batch', '-pw', key , host, helperPath, str(sanatizedname)+".stl"  ],shell=True)
         
 
     # Runs when user selects your command from Fusion UI, Build UI here
