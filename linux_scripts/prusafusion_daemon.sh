@@ -9,10 +9,15 @@ do
 
 if [ -f "/tmp/fusion_new_stl" ]; then
     echo "new fusion export exist"
-    STLFILE=$(cat /tmp/fusion_new_stl | tail -n 1)
+    STLFILE=$(cat /tmp/fusion_new_stl | head -n 1)
+    echo "$STLFILE"
+    # lets do it start slicer
     rm /tmp/fusion_new_stl
     
     $PRUSA_PATH /tmp/"$STLFILE"
+    
+    #cleanup
+    rm /tmp/*.stl
 fi
 
 

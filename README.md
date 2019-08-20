@@ -1,12 +1,35 @@
 # PrusaFusion
-PrusaSlicer Plugin for Fusion 360 over network (SSH)
+PrusaSlicer Plugin over network (SSH) for Fusion 360 
 
-Easily push Fusion 360 designs to another machine from within Fusion and instantly start slicing!
+Easily push Fusion 360 designs to another machine from within Fusion 360 and instantly start slicing!
 
 ![PrusaFusion Cover](./Resources/PrusaFusion_Cover.png)
 
 ## Current Platform support:
 - Linux
+
+## Use cases:
+
+1. From Fusion VM to Linux Host
+
++--------------------------+
+|     LINUX HOST           |
+|                     ^    |
+|        PrusaFusion  |    |
+| +---------------------+  |
+| | Fusion 360        | |  |
+| | virtual machine   + |  |
+| |                     |  |
+| +---------------------+  |
+|                          |
++--------------------------+
+
+
+2. From Fusion PC to Linux Laptop connected to the 3d Printer
+
+3. From Fusion PC to Raspberry Pi connected to the Printer
+
+4. ....
 
 ## Info:
 
@@ -17,21 +40,17 @@ There are two components. The sender aka Fusion plugin and the reciver aka prusa
 ## Usage:
 First see [How to install sample Add-Ins and Scripts](https://rawgit.com/AutodeskFusion360/AutodeskFusion360.github.io/master/Installation.html)
 
-See a youtube video of using the script here:
-- Todo
-
 Basic usage:
   * Install in Windows
-  * connect one time with pscp.exe and plink.exe to the host to safe the ssh key in the registry
-  * prusafusion_daemon.sh and fusion_helper.sh go to ~.PrusaSlicer
+  * Connect one time with pscp.exe and plink.exe to the host to safe the ssh key in the registry
+  * prusafusion_daemon.sh and fusion_helper.sh go to ~.PrusaSlicer, make them executeable.
   * Make sure prusafusion_daemon.sh is running from a Linux user.
   * Change PATH Variable in prusafusion_daemon.sh to the correct one for your PrusaSlicer.AppImage
+  * Export a Design in Fusion and start slicing.
 
 ## Not implemented:
-- Umlauts and other crazy charachters you can do in Windows
-- Some wiered nameing.
-- Opening from more that one stl in one instance of Prusaslicer
-  
+- Some weird nameing like { } but this is possible: Ärmüden Überstößel Öberkärper[ruschä Version] (11.2) v1.stl
+
 ## License
 Licensed under the terms of the [MIT License](http://opensource.org/licenses/MIT). Please see the [LICENSE](LICENSE) file for full details.
 
