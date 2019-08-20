@@ -12,29 +12,6 @@ Easily push Fusion 360 designs to another machine from within Fusion 360 and ins
 
 1. From Fusion VM to Linux Host
 
-+--------------------------+
-
-|     LINUX HOST           |
-
-|                     ^    |
-
-|        PrusaFusion  |    |
-
-| +---------------------+  |
-
-| | Fusion 360        | |  |
-
-| | virtual machine   + |  |
-
-| |                     |  |
-
-| +---------------------+  |
-
-|                          |
-
-+--------------------------+
-
-
 2. From Fusion PC to Linux Laptop connected to the 3d Printer
 
 3. From Fusion PC to Raspberry Pi connected to the Printer
