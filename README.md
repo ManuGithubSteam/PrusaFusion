@@ -5,7 +5,7 @@ Easily push Fusion 360 designs to another machine from within Fusion 360 and ins
 
 ![PrusaFusion Cover](./Resources/PrusaFusion_Cover.png)
 
-## Current Platform support:
+## Current platform support:
 - Linux
 
 ## Use cases:
@@ -13,15 +13,25 @@ Easily push Fusion 360 designs to another machine from within Fusion 360 and ins
 1. From Fusion VM to Linux Host
 
 +--------------------------+
+
 |     LINUX HOST           |
+
 |                     ^    |
+
 |        PrusaFusion  |    |
+
 | +---------------------+  |
+
 | | Fusion 360        | |  |
+
 | | virtual machine   + |  |
+
 | |                     |  |
+
 | +---------------------+  |
+
 |                          |
+
 +--------------------------+
 
 
